@@ -25,9 +25,10 @@ public class Condicionais {
                 default -> "Opção invalida";
             };
             System.out.println(mesagem);
+            scan.close();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
+        
     }
 }

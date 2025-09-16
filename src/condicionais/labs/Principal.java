@@ -12,8 +12,6 @@ public class Principal {
         System.out.println("Digite sua idade: ");
         var idade = entrada.nextInt();
 
-        
-
         entrada.close();
     }
     
