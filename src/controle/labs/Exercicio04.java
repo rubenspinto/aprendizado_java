@@ -4,36 +4,35 @@ import java.time.Year;
 import java.util.Scanner;
 
 /**
- * This program calculates the user's age based on their birth year and the current year.
+ * Programa que solicita ao usuário seu nome e ano de nascimento, calcula a idade do usuário com base no ano corrente e exibe uma mensagem de saudação com o nome e a idade do usuário.
+ * O programa utiliza a classe Scanner para ler a entrada do usuário e a classe Year para obter o ano corrente.
  */
 public class Exercicio04 {
 
     public static void main(String[] args) {
 
-        // Create a Scanner object to read input from the console.
+        // Cria um objeto Scanner para ler a entrada do usuário a partir do console.
         Scanner entrada = new Scanner(System.in);
 
-        // Prompt the user to enter their name.
+        // Exibe uma mensagem solicitando ao usuário que informe seu nome e lê a entrada do usuário usando o método nextLine() do Scanner.
         System.out.println("Informe seu nome: ");
-
-        // Read the user's name from the input.
         var nome = entrada.nextLine();
 
-        // Get the current year automatically.
+        // Obtém o ano corrente usando a classe Year do pacote java.time e exibe-o para o usuário.
         int anoCorrente = Year.now().getValue();
         System.out.println("Ano corrente: " + anoCorrente);
 
-        // Prompt the user to enter their birth year.
+        // Exibe uma mensagem solicitando ao usuário que informe seu ano de nascimento.
         System.out.println("Entre com seu ano de nascimento: " );
         var anoNascimento = entrada.nextInt();
 
-        // Calculate the user's age.
+        // Calcula a idade do usuário subtraindo o ano de nascimento do ano corrente.
         var idade = (anoCorrente - anoNascimento);
 
-        // Display a greeting message with the user's name and calculated age.
+        // Exibe uma mensagem de saudação com o nome do usuário e a idade calculada.
         System.out.println("Olá " + nome + ",\nVocê tem " + idade + " anos.");
 
-        // Close the scanner to prevent resource leaks.
+        // Fechar o scanner é uma boa prática para liberar os recursos associados a ele.
         entrada.close();
     }
 }
