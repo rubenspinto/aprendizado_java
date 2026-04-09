@@ -6,6 +6,7 @@ public class Repeticao_while {
 
     public static void main(String[] args) {
 
+        // metodo try catch para fechar o scanner automaticamente
         try (var scan = new Scanner(System.in)) {
             var nome = "";
 

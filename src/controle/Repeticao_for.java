@@ -5,8 +5,9 @@ import java.util.List;
 
 public class Repeticao_for {
     public static void main(String[] args) {
-        for(var i = 1; i <= 7; i++) {
-            if (i % 2 == 0) continue;
+        for (var i = 1; i <= 7; i++) {
+            if (i % 2 == 0)
+                continue;
             System.out.println("Valor = " + i);
         }
 
@@ -14,6 +15,14 @@ public class Repeticao_for {
 
         for (var fruta : frutas) {
             System.out.println("Fruta = " + fruta);
+            System.out.println("Tamanho da lista de frutas: " + frutas.size());
+
         }
+
+        // criar ma lambida
+        frutas.forEach(fruta -> System.out.println(fruta));
+
+        // criar ma lambida com metodo
+        frutas.forEach(System.out::println);
     }
 }
