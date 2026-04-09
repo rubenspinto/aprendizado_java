@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Exercicio02 {
     public static void main(String[] args) {
-        try {
-            var entrada = new Scanner(System.in);
+        try (var entrada = new Scanner(System.in)) {
             System.out.println("Digite seu peso: ");
             double peso = entrada.nextDouble();
 

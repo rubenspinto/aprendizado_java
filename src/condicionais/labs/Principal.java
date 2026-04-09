@@ -20,6 +20,13 @@ public class Principal {
         var idade = entrada.nextInt();
 
         entrada.close();
+
+        // Verificando se a pessoa é maior ou menor de idade
+        if (idade >= 18) {
+            System.out.println(nome + " é maior de idade.");
+        } else {
+            System.out.println(nome + " é menor de idade.");
+        }
     }
     
 }
