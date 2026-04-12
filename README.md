@@ -1,4 +1,4 @@
-# Revisitando Java e Lógica de Programação
+]# Revisitando Java e Lógica de Programação
 
 Este repositório documenta minha jornada de remasterização da linguagem Java e dos fundamentos da lógica de programação. O objetivo é fortalecer minhas bases, revisando os conceitos mais essenciais e, ao mesmo tempo, consolidando meu conhecimento através da prática.
 

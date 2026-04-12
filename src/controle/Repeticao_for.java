@@ -19,10 +19,10 @@ public class Repeticao_for {
 
         }
 
-        // criar ma lambida
+        // criar ma lambda
         frutas.forEach(fruta -> System.out.println(fruta));
 
-        // criar ma lambida com metodo
+        // criar ma lambda com metodo
         frutas.forEach(System.out::println);
     }
 }
